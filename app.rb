@@ -4,6 +4,8 @@ require 'rainbow'
 require_relative 'paragraph'
 require_relative 'sentence'
 
+#create each sentence where every single word is being used in it at least once
+#keep creating new sentences while there are enough unique words remaining for the new valid sentence
 def create_sentece(paragraph)
   until paragraph.total_words.uniq.length < paragraph.words_array.length
     sentence = Sentence.new
@@ -15,6 +17,7 @@ def create_sentece(paragraph)
   paragraph
 end
 
+#clean up the paragraph and seed it with words
 def make_paragraph(paragraph)
   input_words = paragraph.input_words
   num_of_words = paragraph.num_of_words
