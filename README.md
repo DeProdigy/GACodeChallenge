@@ -5,6 +5,6 @@ ___
 
 <h6>Run app.rb in your terminal</h6>
 
-<p>This solution was first pseudo coded, then prototyped, and then moved over to this current repository.</p>
+<p>This solution was first pseudo coded, then prototyped in a different file and then moved over to this current repository.</p>
 
 <p>Thank you for your time.</p>
