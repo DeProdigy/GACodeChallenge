@@ -21,18 +21,23 @@ def make_paragraph(paragraph)
   paragraph.cleanup_input(input_words).create_all_the_words(num_of_words)
 end
 
+#main function that runs all of the other functions
 def print_lorem(input_words, num_of_words)
+  #create a new paragraph
   paragraph = Paragraph.new(input_words, num_of_words)
   make_paragraph(paragraph)
+  #create sentences for the paragraph, with the remaining words in the last sentence and print it out
   create_sentece(paragraph).push_remainder.print
 end
 
+#run the input menu
 puts "Hello and welcome"#.color(:yellow)
 puts "Input the words you want to Lorem"#.color(:yellow)
 input_words = gets.chomp!
 puts "How many words do you want to print out?"#.color(:yellow)
 num_of_words = gets.chomp!.to_i
 
+#trigger print_lorem to start the function
 print_lorem(input_words, num_of_words)
 
 

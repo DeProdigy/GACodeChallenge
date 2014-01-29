@@ -13,6 +13,7 @@ class Paragraph
   end
 
   def cleanup_input(input_words)
+
     @words_array = input_words.gsub(', ', ' ').split(' ')
     self
   end
