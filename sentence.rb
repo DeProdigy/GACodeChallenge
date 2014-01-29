@@ -22,7 +22,7 @@ class Sentence
   end
 
   def to_string
-    print @words.join(' ').gsub(' .', '. ').color(:green)
+    print @words.join(' ').gsub(' .', '. ')#.color(:green)
   end
 
 end

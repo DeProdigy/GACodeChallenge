@@ -27,10 +27,10 @@ def print_lorem(input_words, num_of_words)
   create_sentece(paragraph).push_remainder.print
 end
 
-puts "Hello and welcome".color(:yellow)
-puts "Input the words you want to Lorem".color(:yellow)
+puts "Hello and welcome"#.color(:yellow)
+puts "Input the words you want to Lorem"#.color(:yellow)
 input_words = gets.chomp!
-puts "How many words do you want to print out?".color(:yellow)
+puts "How many words do you want to print out?"#.color(:yellow)
 num_of_words = gets.chomp!.to_i
 
 print_lorem(input_words, num_of_words)
